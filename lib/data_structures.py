@@ -41,6 +41,9 @@ def print_spicy_foods(spicy_foods):
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
     pass
+    # returns a single dictionary for the spicy food whose cuisine matches the cuisine being passed to the method.
+    result = [{food for food in spicy_foods if food["cuisine"] == cuisine}]
+    return result[0] if result else None
 
 def print_spiciest_foods(spicy_foods):
     pass
